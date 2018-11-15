@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="referrer" content="no-referrer">
+    <title>PeopleHR login for Xogito</title>
+    <style type="text/css">
+        button {
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: underline;
+            cursor: pointer;
+            color: blue;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .left {
+            float: left;
+        }
+
+        #tip {
+            background: #eee;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        tr > td:first-child {
+            font-weight: bold;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+<div style="text-align: center">
+    <a href="https://www.xogito.com/" target="_blank"><img id="logo" src="img/logo.png" style="max-width: 100%; max-height: 128px"></a>
+    <br><br>
+    <!-- <strong> is for snobs -->
+    <b>PeopleHR account:</b>
+</div>
+
+<br>
+
+<!-- Proudly designed using <table> ♥ -->
+<table style="white-space: nowrap">
+    <tr>
+        <td><label for="email"><b>Email:</b></label></td>
+        <td><input id="email" style="width: 100%"></td>
+    </tr>
+    <tr>
+        <td><label for="password"><b>Password:</b></label></td>
+        <td><input type="password" id="password" style="width: 100%"></td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td><label><input type="checkbox" id="auto_close"> Close PeopleHR when done</label></td>
+    </tr>
+</table>
+
+<br>
+<br>
+
+<button id="sign_in" class="left" style="width: 45%">Time in</button>
+<div class="left" style="width:10%">&nbsp;</div>
+<button id="sign_out" class="left" style="width:45%">Time out</button>
+<div class="clear"></div>
+
+<div id="sign_in_time" class="left" style="width: 33%" title="Last time in"></div>
+<div id="xogito_time" class="left" style="width: 34%; text-align: center" title="Now">&nbsp;</div>
+<div id="sign_out_time" class="left" style="width: 33%; text-align: right" title="Last time out"></div>
+<div class="clear"></div>
+
+<br>
+<br>
+
+<div id="tip" style="white-space: normal; word-break: break-word"></div>
+
+<a id="help" class="left" style="width: 33%">Help</a>
+<a href="https://github.com/xgflorin/xogitohr" target="_blank" class="left" style="width:34%; text-align: center">Github</a>
+<a id="reset" class="left" style="width: 33%; text-align: right">Reset</a>
+<div class="clear"></div>
+
+<script src="popup.js"></script>
+
+</body>
+</html>
